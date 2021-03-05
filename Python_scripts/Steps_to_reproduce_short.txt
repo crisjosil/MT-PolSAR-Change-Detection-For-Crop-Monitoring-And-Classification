@@ -1,0 +1,41 @@
+"""
+@author: Cristian Silva-Perez
+"""
+
+PolSAR images Pre-processing:
+Calibration, Multilook, Speckle filter (boxcar 9x9), terrain correction, Corregistration, save.
+
+Once the stack is ready, extract the master image as subset. Export this subset as Geotiff to later on, using rasterio read the geo-info in python
+
+In python, follow the letters of the .py files as follows:
+A. Create change matrices of typical parcels with the files Change_Matrix_AgriSAR_typical_parcels.py and A1_Change_Matrix_Seville(with_Final_CM_code).py (saved in D:\Juanma\Seville 2014\FQ19W\Change_matrices)
+B. Create the multitemporal array of 2D Coherency matrices with the script: B1_array2D_of_coherency_matrices.py.
+C. (See item I.) Create labels, Ids and areas layers with the script: C_np_Labels_from_shp.py
+D. Get the ground truth summary ensuring that it matches the final stack shape with the script: D2_Ground_truth_summary.py
+D. Split dataset into training and testing parcels. We want to ensure that pixels inside a parcel are assigned either to training or testing but no both. Use script: D2_Ground_truth_summary.py. A bit slow
+D. Plot the maps of the parcels selected for train and for test, with the script:D2_Ground_truth_summary.py (at the end)
+E. Create and save the multidimensional datacube containing the PolSAR features for every image available with the script: E_MT_Datacube.py
+H. Create and save datacube containing the change matrices for every pixel with the script with vis error as done in previous conf with script: H_Change_mat_datacube.py
+H. Also Datacube with change matrices but Alberto visualization with the script: H1_Change_mat_datacube_other_viz.py
+H. Final Datacube with change matrices visualization as described in the paper with the script: H2a_Change_mat_datacube_other_viz_abs.py
+The final cube used was CM_Datacube_viz_abs_with_diagV6.npy located in:D:\Paper2\Ascending_only_V1\np_arrays\Change_matrix\V1
+I.Using the corresponding datacubes as inputs, create the datasets for training and testing for the three data types: PolSAR, Change matrix and Wishart distances with the script: I3_Final_dataset.py
+
+K_RGBs_and_SM_RGBs_Seville (Fig1).py
+K1_RGBs_and_SM_RGBs_Canada (Fig2).py
+L_Bi_date_CD_seville(Fig3).py
+(Fig4 and Fig5 with A1 and A2 .py scripts)
+
+Optional: I4_master.py: Use this to run script C, D and I from a single file.
+
+Once the train/test datasets are created, run  the colab notebooks to train and test the neural networks with keras and tensorflow in colab.
+Upload final train/test datasets to google drive
+Colab_1. In colab, run AgriSAR_indiv_NNs_V0.ipynb to train the models.
+Colab_2. In colab, run AgriSAR_indiv_NNs_Confusion_matrix_V0.ipynb to evaluate model performances and get confusion matrices (figs 6 to 9)
+
+M. In python run M_Scale_CM_cube (figs 10&11).py to scale the cube prior prediction with the trained model
+Colab_3.In colab, run Prediction_maps.ipynb to create the prediction maps (figs 10 & 11)
+
+
+Summary of Steps to reproduce:
+B1, E, H2a, I4, Colab_1, Colab_2, M, Colab_3. 
