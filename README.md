@@ -55,7 +55,7 @@ their intersecting squares in the upper and lower triangular part, respectively
 <img src="https://user-images.githubusercontent.com/38487043/110109518-7b801700-7da5-11eb-9bdf-b637ce7ff9e2.png" width="500" height="500">
 
 ### Barely multitemporal polarimetric change over time
-<img src="//https://user-images.githubusercontent.com/38487043/110110512-d8c89800-7da6-11eb-9608-7f5b5f6475f1.png" width="500" height="500">
+<img src="https://user-images.githubusercontent.com/38487043/110110512-d8c89800-7da6-11eb-9608-7f5b5f6475f1.png" width="500" height="500">
 
 ### Field peas multitemporal polarimetric change over time
 <img src="https://user-images.githubusercontent.com/38487043/110110604-fd247480-7da6-11eb-8806-011857007aa9.png" width="500" height="500">
