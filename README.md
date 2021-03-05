@@ -52,7 +52,13 @@ their intersecting squares in the upper and lower triangular part, respectively
 ![Rice_change_matrix](https://user-images.githubusercontent.com/38487043/110109378-42e03d80-7da5-11eb-9217-29c0488133c5.png)
 
 ### Canola multitemporal polarimetric change over time
-<img src="https://user-images.githubusercontent.com/38487043/110109518-7b801700-7da5-11eb-9bdf-b637ce7ff9e2.png" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/38487043/110109518-7b801700-7da5-11eb-9bdf-b637ce7ff9e2.png" width="500" height="500">
+
+### Barely multitemporal polarimetric change over time
+<img src="https://https://user-images.githubusercontent.com/38487043/110110512-d8c89800-7da6-11eb-9608-7f5b5f6475f1.png" width="500" height="500">
+
+### Field peas multitemporal polarimetric change over time
+<img src="https://user-images.githubusercontent.com/38487043/110110604-fd247480-7da6-11eb-8806-011857007aa9.png" width="500" height="500">
 
 ### Prediction maps with 10 crop types
 ![Prediction_map](https://user-images.githubusercontent.com/38487043/110109596-95b9f500-7da5-11eb-9658-cd657c47f641.PNG)
