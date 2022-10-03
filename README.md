@@ -1,5 +1,5 @@
 # MT-PolSAR-Change-Detection-For-Crop-Monitoring-And-Classification
-Repository associated with the paper: Multi-Temporal Polarimetric SAR (MT-PolSAR) Change Detection For Crop Monitoring And Crop Type Classification
+Repository associated with the paper: [Multi-Temporal Polarimetric SAR (MT-PolSAR) Change Detection For Crop Monitoring And Crop Type Classification](https://ieeexplore.ieee.org/document/9625782)
 
 A detailed description to reproduce the work presented in the paper can be found [here](https://github.com/crisjosil/MT-PolSAR-Change-Detection-For-Crop-Monitoring-And-Classification/blob/master/Python_scripts/Steps_to_reproduce_short.txt). In summary you can reproduce the results of the paper running the scripts in the following order:
 
